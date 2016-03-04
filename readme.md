@@ -16,6 +16,7 @@
 ### Ćwiczenie 1
 Stwórz klasę ```Calculator```. Konstruktor ma nie przyjmować żadnych danych. Każdy nowo stworzony obiekt powinien mieć pustą tablicę w której będzie trzymać historię wywołanych operacji (stwórz ją w konstruktorze).
 Nastęnie dodaj do klasy następujące metody:
+
 1. ```add($num1, $num2)``` - metoda ma dodać do siebie dwie zmienne i zwrócić wynik. Dodatkowo w tablicy operacji ma zapamiętać napis: "added ```num1``` to ```num2``` got ```result```".
 2. ```multiply($num1, $num2)``` - metoda ma pomnożyć przez siebie dwie zmienne i zwrócić wynik. Dodatkowo w tablicy operacji ma zapamiętać napis: "multiplied ```num1``` with ```num2``` got ```result```".  
 3. ```subtract($num1, $num2)``` - metoda ma odjąć od siebie dwie zmienne i zwrócić wynik. Dodatkowo w tablicy operacji ma zapamiętać napis: "subtracted ```num1``` from ```num2``` got ```result```".  
@@ -29,6 +30,7 @@ Stwórz kilka kalkulatorów i przetestuj ich działanie.
 ### Ćwiczenie 2
 Stwórz klasę ```AdvancedCalculator``` który dziedziczy po klasie ```Calculator```. 
 Klasa powinna impementować nastepujące metody:
+
 1. ```pow($num1, $num2)``` - metoda ma zwracać ```num1``` do potęgi ```num2```. Dodatkowo w tablicy operacji ma zapamiętać napis: "```num1```^```num2``` equals ```result```".
 2. ```root($num1, $num2)``` - metoda ma wyliczyć pierwiastek ```num2``` stopnia z ```num1```. Dodatkowo w tablicy operacji ma zapamiętać napis: "root ```num2``` of ```num1``` equals ```result```".  
 
@@ -36,6 +38,7 @@ Pamiętaj o nastawieniu atrubytów klasy ```Calculator``` na ```protected```.
 
 ### Ćwiczenie 2
 Do klasy ```AdvancedCalculator``` dopisz:
+
 1. Statyczny atrybut ```PI``` który będzie miał przypisaną wartość 3.14
 2. Statczyną funkcję ```computeCircleRadius($r)``` która będzie zwracała pole koła. Ta metoda nie będzie dopisywać do tablicy obliczeń (napisz w komentarzy dlaczego nie może tego robić).
 
@@ -43,6 +46,7 @@ Do klasy ```AdvancedCalculator``` dopisz:
 
 ### Ćwiczenie 1
 Stwórz klasę Wektor. Powinna ona spełniać następujące wymogi:
+
 1. Posiadać dwa prywatne atrybuty: x, y.
 2. Posiadać konstruktor przyjmujący dwie zmienne, określające wartości x i y tego wektora. Pamiętaj o sprawdzeniu czy podane zmienne są liczbami (jeżeli nie są to nastaw oba na 0). Konstruktor powinien wypisywać informacje o właśnie stworzonym wektorze.
 3. Posiadać destruktor który wypisuje informacje o niszczonym wektorze.
@@ -51,10 +55,10 @@ Stwórz klasę Wektor. Powinna ona spełniać następujące wymogi:
 6. Implementować następujące funkcje: 
   1. Dodawanie przyjmujące jako wartość drugi Wektor, 
   2. Mnożenie skalarne przyjmujące jako wartość liczbę
-  3. Mnożenie wektorowe przyjmujące jako wartość drugi wektor
 
 ### Ćwiczenie 2
 Stwórz kasę kształt która ma spełniać następujące wymogi:
+
 1. Posiadać prywatne atrybuty: x, y (określające środek tego kształtu) i color.
 2. Posiadać konstruktor przyjmujący zmienne, określające wartości x, y i kolor. Pamiętaj o sprawdzeniu czy podane zmienne są liczbami (jeżeli nie są to nastaw oba na 0), a kolor napisem. Konstruktor powinien wypisywać informacje o właśnie stworzonym kształcie.
 3. Posiadać destruktor który wypisuje informacje o niszczonym kształcie.
@@ -65,6 +69,7 @@ Sprawdź co się dzieje kiedy zmieniasz dostęp do poszczególnych funkcji z pub
 
 ### Ćwiczenie 3
 Stwórz kasę koło która ma spełniać następujące wymogi:
+
 1. Dziedziczyć po kształcie
 2. Mieć dodatkowy atrybut promień
 3. Posiadać konstruktor przyjmujący zmienne, określające wartości x, y, kolor i promień. Pamiętaj o sprawdzeniu czy podane zmienne są liczbami (jeżeli nie są to nastaw oba na 0), a kolor napisem. Konstruktor powinien wypisywać informacje o właśnie stworzonym okręgu.
@@ -76,6 +81,7 @@ Stwórz kasę koło która ma spełniać następujące wymogi:
 
 ### Ćwiczenie 4
 Stwórz kasę stożek i walec która mają spełniać następujące wymogi:
+
 1. Dziedziczyć po kole
 2. Mieć dodatkowy atrybut wysokość
 3. Posiadać konstruktor przyjmujący zmienne, określające wartości x, y, kolor, promień i wysokość. Pamiętaj o sprawdzeniu czy podane zmienne są liczbami (jeżeli nie są to nastaw oba na 0), a kolor napisem. Konstruktor powinien wypisywać informacje o właśnie stworzonym okręgu.
@@ -87,6 +93,7 @@ Stwórz kasę stożek i walec która mają spełniać następujące wymogi:
 
 ### Ćwiczenie 5
 Napisz obiektowo program, który będzie obsługiwał skanowanie produktów na kasie jak w supermarkecie.
+
 1. Stwórz klasę dla produktów (musi ona zawierać ilość, opis, identyfikator produktu i cenę). Ma mieć gunkcję do nastawiania i zwracania odpowiednich swoich atrybutów. Dodatkowo napisz funkcję która wyliczy łączną kwotę za przedmiot (ilość * cena)
 2. Napisz klasę Skaner. Skaner musi implementować:
   1. Dodanie produktu (przez przekazanie obiektu produktu).
