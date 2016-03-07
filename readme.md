@@ -36,7 +36,7 @@ Klasa powinna impementować nastepujące metody:
 
 Pamiętaj o nastawieniu atrubytów klasy ```Calculator``` na ```protected```. 
 
-### Ćwiczenie 2
+### Ćwiczenie 3
 Do klasy ```AdvancedCalculator``` dopisz:
 
 1. Statyczny atrybut ```PI``` który będzie miał przypisaną wartość 3.14
