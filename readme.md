@@ -20,7 +20,7 @@ Nastęnie dodaj do klasy następujące metody:
 1. ```add($num1, $num2)``` - metoda ma dodać do siebie dwie zmienne i zwrócić wynik. Dodatkowo w tablicy operacji ma zapamiętać napis: "added ```num1``` to ```num2``` got ```result```".
 2. ```multiply($num1, $num2)``` - metoda ma pomnożyć przez siebie dwie zmienne i zwrócić wynik. Dodatkowo w tablicy operacji ma zapamiętać napis: "multiplied ```num1``` with ```num2``` got ```result```".  
 3. ```subtract($num1, $num2)``` - metoda ma odjąć od siebie dwie zmienne i zwrócić wynik. Dodatkowo w tablicy operacji ma zapamiętać napis: "subtracted ```num1``` from ```num2``` got ```result```".  
-4. ```divide($num1, $num2)``` - metoda ma podzielić przez siebie dwie zmienne i zwrócić wynik. Dodatkowo w tablicy operacji ma zapamiętać napis: "divided ```num1``` by ```num2``` got ```result```".  
+4. ```divide($num1, $num2)``` - metoda ma podzielić przez siebie dwie zmienne i zwrócić wynik. Dodatkowo w tablicy operacji ma zapamiętać napis: "divided ```num1``` by ```num2``` got ```result```". Pamiętaj, że nie można dzielić przez 0.
 5. ```printOperations()``` - metoda ma wypisać wszystkie operacje zapamiętane w pamięci.
 6. ```clearoperations()``` - metoda ma wyczyścić wszystkie operacje z pamięci.
 
@@ -40,7 +40,7 @@ Pamiętaj o nastawieniu atrubytów klasy ```Calculator``` na ```protected```.
 Do klasy ```AdvancedCalculator``` dopisz:
 
 1. Statyczny atrybut ```PI``` który będzie miał przypisaną wartość 3.14
-2. Statczyną funkcję ```computeCircleRadius($r)``` która będzie zwracała pole koła. Ta metoda nie będzie dopisywać do tablicy obliczeń (napisz w komentarzy dlaczego nie może tego robić).
+2. Statczyną funkcję ```computeCircleRadius($r)``` która będzie zwracała pole koła. Ta metoda nie będzie dopisywać do tablicy obliczeń (napisz w komentarzu dlaczego nie może tego robić).
 
 ## Ćwiczenia samodzielne
 
@@ -57,7 +57,7 @@ Stwórz klasę Wektor. Powinna ona spełniać następujące wymogi:
   2. Mnożenie skalarne przyjmujące jako wartość liczbę
 
 ### Ćwiczenie 2
-Stwórz kasę kształt która ma spełniać następujące wymogi:
+Stwórz klasę kształt która ma spełniać następujące wymogi:
 
 1. Posiadać prywatne atrybuty: x, y (określające środek tego kształtu) i color.
 2. Posiadać konstruktor przyjmujący zmienne, określające wartości x, y i kolor. Pamiętaj o sprawdzeniu czy podane zmienne są liczbami (jeżeli nie są to nastaw oba na 0), a kolor napisem. Konstruktor powinien wypisywać informacje o właśnie stworzonym kształcie.
@@ -68,7 +68,7 @@ Stwórz kasę kształt która ma spełniać następujące wymogi:
 Sprawdź co się dzieje kiedy zmieniasz dostęp do poszczególnych funkcji z publicznych na prywatne. Zobacz co z konstruktorem i destruktorem.
 
 ### Ćwiczenie 3
-Stwórz kasę koło która ma spełniać następujące wymogi:
+Stwórz klasę koło która ma spełniać następujące wymogi:
 
 1. Dziedziczyć po kształcie
 2. Mieć dodatkowy atrybut promień
@@ -94,7 +94,7 @@ Stwórz kasę stożek i walec która mają spełniać następujące wymogi:
 ### Ćwiczenie 5
 Napisz obiektowo program, który będzie obsługiwał skanowanie produktów na kasie jak w supermarkecie.
 
-1. Stwórz klasę dla produktów (musi ona zawierać ilość, opis, identyfikator produktu i cenę). Ma mieć gunkcję do nastawiania i zwracania odpowiednich swoich atrybutów. Dodatkowo napisz funkcję która wyliczy łączną kwotę za przedmiot (ilość * cena)
+1. Stwórz klasę dla produktów (musi ona zawierać ilość, opis, identyfikator produktu i cenę). Ma mieć funkcję do nastawiania i zwracania odpowiednich swoich atrybutów. Dodatkowo napisz funkcję która wyliczy łączną kwotę za przedmiot (ilość * cena)
 2. Napisz klasę Skaner. Skaner musi implementować:
   1. Dodanie produktu (przez przekazanie obiektu produktu).
   2. Usunięcie produktu (poprzez podanie identyfikatora). W przypadku kiedy takiego produktu nie ma jeszcze zeskanowanego ta funkcja ma nic nie robić.
