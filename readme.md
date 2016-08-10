@@ -120,10 +120,10 @@ Do klasy ```AdvancedCalculator``` dopisz:
  2. Statyczną funkcję ```computeCircleRadius($r)``` która będzie zwracała pole koła. Ta metoda nie będzie dopisywać obliczeń do tablicy (napisz w komentarzu, dlaczego nie może tego robić).
 
 ### Zadanie C2 &ndash; zadanie rozwiązywane z wykładowcą
-Zmień kalsę `BankAccount` w taki sposób żeby konstruktor sam nadawał numer konta bankowego. Dla uproszczenia będziemy nadawać kolejne liczby całkowite zaczynając od zera. Zeby to zrobić:
- 1. Dodaj do klasy statyczny prywatny atrybut `nextId`.
+Zmień kalsę `BankAccount` w taki sposób żeby konstruktor sam nadawał numer konta bankowego. Dla uproszczenia będziemy nadawać kolejne liczby całkowite zaczynając od jedynki. Zeby to zrobić:
+ 1. Dodaj do klasy statyczny prywatny atrybut `nextAccNumber`.
  2. Nastaw jego wartość na 1.
- 3. Zmodyfikuj konstruktor w taki sposób żeby nie przyjmował id, tylko przypisywał wartość atrybutu `nextId` do swojego atrybutu `id`, a nastepnie zwiększał `nextId` o jeden.
+ 3. Zmodyfikuj konstruktor w taki sposób żeby nie przyjmował numeru konta, tylko przypisywał wartość atrybutu `nextAccNumber` do swojego atrybutu `number`, a nastepnie zwiększał `nextAccNumber` o jeden.
 
 Przetestuj jak generowane są numery twoich kont.  
 
