@@ -1,8 +1,14 @@
 <?php
+require ('Employee.php');
 
-/* 
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+class HourlyEmployee extends Employee {
+    public function computePayment($hours) {
+        if(is_numeric($hours) && $hours > 0) {
+            return $hours * $this->getSalary();
+        }
+    }
+}
+
+$john = New HourlyEmployee(5, "John", "blabla", 50);
+echo $john->computePayment(8);
 

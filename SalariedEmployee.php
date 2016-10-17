@@ -1,8 +1,11 @@
 <?php
+require ('Employee.php');
 
-/* 
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+class SalariedEmployee extends Employee {
+    public function computePayment() {
+        return $this->getSalary() * 190;
+    } 
+}
 
+$john = New SalariedEmployee(5, "john", "blabla", 50);
+echo $john->computePayment();
